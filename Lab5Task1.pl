@@ -66,7 +66,7 @@ cousin(X, Y) :- parent(Z, X), parent(W, Y), sibling(Z, W).
 
 ancestor(X, Y) :- parent(X, Y).
 ancestor(X, Z) :- parent(X, Y), ancestor(Y, Z).
-//----------------------------------------------------
+%----------------------------------------------------
 % 3. Testing Queries and Answers
 
 % 60 ?- consult(['/Users/arwa/Lab5Task1.pl']).
